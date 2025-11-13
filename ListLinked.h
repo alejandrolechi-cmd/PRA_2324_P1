@@ -41,6 +41,7 @@ class ListLinked : public List<T> {
         append(temp[i]);
     }
     delete[] temp;
+	   }
         void insert(int pos, T element)override{
                 if(pos<0 || pos>n){
                         throw out_of_range("Posicion no valida");
