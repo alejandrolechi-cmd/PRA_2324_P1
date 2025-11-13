@@ -12,15 +12,15 @@ class ListArray : public List<T> {
         ListArray();
         ~ListArray();
     void capicualista() override {
-    int original_size = n;
+        int original_size = n;
     // Aseguramos espacio suficiente
-    if (n * 2 > max) {
+        if (n * 2 > max) {
         resize(n * 2);
     }
     // Duplicamos en orden inverso
-    for (int i = 0; i < original_size; i++) {
-        arr[n] = arr[original_size - 1 - i];
-        n++;
+        for (int i = 0; i < original_size; i++) {
+          arr[n] = arr[original_size - 1 - i];
+          n++;
     }
 // fin capicua.
         void resize (int new_size) override{
