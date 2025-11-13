@@ -25,6 +25,22 @@ class ListLinked : public List<T> {
                     first = aux;
                 }
         }
+       void capicualista() override {
+          if (n == 0) return;
+
+    // Recorremos la lista original para obtener los valores
+          T* temp = new T[n];
+          Node<T>* aux = first;
+          for (int i = 0; i < n; i++) {
+          temp[i] = aux->data;
+        aux = aux->next;
+    }
+
+    // Insertamos en orden inverso al final
+        for (int i = n - 1; i >= 0; i--) {
+        append(temp[i]);
+    }
+    delete[] temp;
         void insert(int pos, T element)override{
                 if(pos<0 || pos>n){
                         throw out_of_range("Posicion no valida");
