@@ -11,7 +11,18 @@ class ListArray : public List<T> {
     public:
         ListArray();
         ~ListArray();
-
+    void capicualista() override {
+    int original_size = n;
+    // Aseguramos espacio suficiente
+    if (n * 2 > max) {
+        resize(n * 2);
+    }
+    // Duplicamos en orden inverso
+    for (int i = 0; i < original_size; i++) {
+        arr[n] = arr[original_size - 1 - i];
+        n++;
+    }
+// fin capicua.
         void resize (int new_size) override{
 			T* new_arr = new T[new_size];
 			for(int i=0;i<n;i++){
