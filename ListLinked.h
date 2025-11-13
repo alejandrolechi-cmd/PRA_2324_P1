@@ -25,7 +25,7 @@ class ListLinked : public List<T> {
                     first = aux;
                 }
         }
-       void capicualista() override {
+       void capicua_list() override {
           if (n == 0) return;
 
     // Recorremos la lista original para obtener los valores
