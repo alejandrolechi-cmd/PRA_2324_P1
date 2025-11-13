@@ -14,7 +14,7 @@ class List {
 		virtual T get(int pos);//devuelve el elemento en pos (OOR)
 		virtual bool empty(); //¿lista vacia?
 		virtual int size();//num. elementos de la lista
+        virtual void capicualista() = 0;
 };
-virtual void capicualista() = 0;
 
 #endif
