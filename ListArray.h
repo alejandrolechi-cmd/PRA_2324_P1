@@ -22,6 +22,7 @@ class ListArray : public List<T> {
           arr[n] = arr[original_size - 1 - i];
           n++;
     }
+	}
 // fin capicua.
         void resize (int new_size) override{
 			T* new_arr = new T[new_size];
