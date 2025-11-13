@@ -15,5 +15,6 @@ class List {
 		virtual bool empty(); //¿lista vacia?
 		virtual int size();//num. elementos de la lista
 };
+virtual void capicua() = 0;
 
 #endif
