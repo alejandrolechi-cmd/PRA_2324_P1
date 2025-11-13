@@ -11,7 +11,7 @@ class ListArray : public List<T> {
     public:
         ListArray();
         ~ListArray();
-    void capicualista() override {
+    void capicua_list() override {
         int original_size = n;
     // Aseguramos espacio suficiente
         if (n * 2 > max) {
